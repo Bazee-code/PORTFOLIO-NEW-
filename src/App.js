@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//local
+import {Home,Projects,About,Contacts} from './components'; 
+
+class App extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Router>
+          <Switch>
+            <Route exact path={["/","/profile"]} component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contacts" component={Contacts}/>
+          </Switch>
+        </Router>
+      </React.Fragment>
+    )
+  }
+};
 
 export default App;
+
+// Route renders all components that match the specified url
+// Switch renders only the 1st component that matches the specified url
