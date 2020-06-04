@@ -15,7 +15,7 @@ const Card = styled.div`
 `
 const Accordion = ()=>{
 	return (
-				<div className="text-center mt-3">
+				<div className="text-center">
 				<div id="accordion">
 
 		    <div id="collapseOne" className="collapse" data-parent="#accordion">
@@ -40,7 +40,7 @@ const Accordion = ()=>{
 		      			<Bar className="progress-bar progress-bar-striped  progress-bar-animated" style={{width:"70%"}}>React.js</Bar>
 		      		</div>
 		      		<div className="progress mt-2" style={{height:"25px"}}>
-		      			<Bar className="progress-bar progress-bar-stripe  progress-bar-animated" style={{width:"50%"}}>Node.js</Bar>
+		      			<Bar className="progress-bar progress-bar-striped  progress-bar-animated" style={{width:"50%"}}>Node.js</Bar>
 		      		</div>
 		      		<div className="progress mt-2" style={{height:"25px"}}>
 		      			<Bar className="progress-bar  progress-bar-striped progress-bar-animated" style={{width: "70%"}}>MongoDB & Mongoose</Bar>

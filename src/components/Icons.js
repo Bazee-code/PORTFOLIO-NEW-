@@ -24,7 +24,7 @@ const Icons = () =>{
 			<span><A href="instagram.com" target="_blank" data-toggle="tooltip" 
 			data-placement="top" title="My instagram"><FaInstagramSquare /></A></span>
 			<p>You can also send me an email here</p>
-				<FaArrowCircleRight style={{color:"#D5D221"}}/>
+				<FaArrowCircleRight style={{color:"#D5D221"}} />
 		</div>
 	)
 };

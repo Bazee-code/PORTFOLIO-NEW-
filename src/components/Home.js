@@ -7,8 +7,13 @@ const FlipAnimation = styled.div`
 	animation : 3s ${keyframes`${flip}`};
 	font-size : 25px;
 `
-const Bounce = styled.div`
+const Bounce = styled.button`
 		animation : 2s ${keyframes`${bounce}`} infinite;
+		border : 2px solid #21C0D5; 
+
+		&:hover{
+			color : blue; 
+		} 
 `
 const Home =()=> {
 	return (
@@ -28,12 +33,12 @@ const Home =()=> {
 					<p className="m-4">I'm <span className="text-info">Eugene Obare</span> .</p>
 					<p >I'm a <span className="text-info">fullstack developer</span> from Nairobi,Kenya .</p>
 				</FlipAnimation>
-				<Bounce>
+				<div>
 					<Link to="/about">
-						<button className="btn btn-md btn-dark btn-outline-info mt-5">
-						<span className="text-warning">KNOW MORE ABOUT ME</span></button>
+						<Bounce className="btn btn-md mt-5" data-toggler="tooltip" data-placement="bottom" title="Enter website">
+						<span className="text-warning">KNOW MORE ABOUT ME</span></Bounce>
 				</Link>
-				</Bounce>
+				</div>
 				<div className="text-center text-white mt-5">Made using React.js</div>
 			</div>
 		</React.Fragment>
