@@ -74,7 +74,9 @@ class Userform extends React.Component{
 								<input type="email" id="email" className="form-control mb-2" placeholder="Your email"/>
 								<label htmlFor="message">Message</label>
 								<textarea className="form-control" id="message" placeholder="How was your experience? Let me know"></textarea>
+								<div className="text-center mt-2">
 								<button type="submit" className="btn btn-md btn-dark btn-outline-warning">SUBMIT</button>
+								</div>
 							</form>
 							</div>
 					</FormStyle>

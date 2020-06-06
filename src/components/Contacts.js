@@ -3,6 +3,7 @@ import React from 'react';
 // local
 import Navbar from './Navbar';
 import UserForm from './userform';
+import Resume from './resume';
 
 const Contacts = ()=>{
 	return (
@@ -12,6 +13,7 @@ const Contacts = ()=>{
 		</div>
 			<Navbar />
 			<UserForm />
+			<Resume />
 		</div>
 	)
 };
