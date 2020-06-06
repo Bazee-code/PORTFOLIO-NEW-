@@ -14,7 +14,8 @@ const A = styled.a`
 const Resume = () =>{
 	return (
 		<div className="text-center mt-3">
-		<Button className="btn">
+		<Button className="btn" data-toggle="tooltip" 
+		data-placement="right" title="Click to download my resume">
 			<A href="./resume/resume.pdf" target="_blank" download="eugene-resume.pdf">Download my resume</A>
 		</Button>
 		</div>
