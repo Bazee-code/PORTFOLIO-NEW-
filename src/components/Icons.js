@@ -21,7 +21,7 @@ const Icons = () =>{
 			title="Check my LinkedIn" data-placement="bottom"><FaLinkedin /></A>
 			<span><A href="https://github.com/Bazee-code" target="_blank" data-toggle="tooltip" 
 			data-placement="right" title="Check my Github"><FaGithub /></A></span>
-			<span><A href="instagram.com" target="_blank" data-toggle="tooltip" 
+			<span><A href="mailto:eugeneobare@gmail.com" target="_top" data-toggle="tooltip" 
 			data-placement="top" title="My instagram"><FaInstagramSquare /></A></span>
 			<p>You can also send me an email here</p>
 			<div className="d-none d-sm-block">
